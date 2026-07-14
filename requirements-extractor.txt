@@ -1,0 +1,9 @@
+# Dependencias EXTRA solo para el pipeline de cosecha offline (extractor/).
+# No se instalan en el deploy web (Docker/HF): la app FastAPI no las importa.
+# Las deps compartidas (pandas, geopandas, rasterio, numpy, requests, shapely,
+# Pillow) ya están en requirements.txt. Instalar además:
+#   pip install -r requirements-extractor.txt
+scipy>=1.11        # find_peaks en analizar_cosecha_hybris.py
+matplotlib>=3.8    # render de frames del GIF en procesar_lote.py + peritaje_eventos.py
+folium>=0.15       # visor de campo offline en peritaje_eventos.py
+simplekml>=1.3     # KML para peritos en peritaje_eventos.py

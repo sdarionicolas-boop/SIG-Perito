@@ -1,0 +1,25 @@
+# Versiones alineadas con Python 3.14 (todas con wheels precompilados para cp314).
+# Los pines anteriores (shapely 2.0.4 / pandas 2.2.2 / numpy 1.26) no tenían
+# wheels para 3.14 y pip intentaba compilarlos desde fuente -> fallaba.
+fastapi==0.135.3
+uvicorn==0.44.0
+python-multipart==0.0.27
+requests==2.33.0
+httpx==0.28.1                # cliente usado por soilgrids.py (SoilGrids REST API)
+pandas==2.3.3
+geopandas==1.1.3
+shapely==2.1.2
+rasterio==1.5.0
+pyproj==3.7.2                # reproyección en raster.py (clip de rásters SOC/COS)
+numpy==2.4.3
+scikit-learn==1.8.0
+python-dotenv==1.2.1
+truststore==0.10.4          # usa el almacén de certificados del SO (antivirus/proxy con inspección TLS)
+netCDF4==1.7.4              # lectura de WRF-DET (SMN) y GLM (GOES-19)
+pydantic==2.12.5
+Pillow==11.0.0
+fpdf2==2.8.2
+
+
+folium
+simplekml

@@ -1,0 +1,13 @@
+# Secretos — NUNCA commitear
+.env
+*.env
+
+# Cachés, datos y reportes (ignorar por completo la carpeta data para evitar fugas)
+cache/
+data/
+__pycache__/
+*.pyc
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
