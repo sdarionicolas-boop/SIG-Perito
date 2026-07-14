@@ -17,7 +17,6 @@ RUN pip install --no-cache-dir -r requirements-extractor.txt
 
 # Copiar código y datos del backend
 COPY app/ ./app
-COPY data/ ./data
 COPY extractor/ ./extractor
 
 # Copiar el frontend compilado desde la etapa 1
